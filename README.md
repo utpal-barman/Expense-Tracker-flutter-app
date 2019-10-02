@@ -1,4 +1,4 @@
-# expense_tracker
+# Expense Tracker
 
 A new Flutter application for tracking expenses
 
@@ -6,4 +6,6 @@ A new Flutter application for tracking expenses
 
 This project is a starting point for a Flutter application which can track expenses.
 
-This project is still on developement.
+This project is still on developement
+
+This app can run both on IOS and Android.
