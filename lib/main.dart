@@ -1,4 +1,5 @@
-import 'package:expense_tracker/screens/transaction_list.dart';
+import './screens/chart.dart';
+import './screens/transaction_list.dart';
 
 import './screens/new_transaction.dart';
 import 'package:flutter/material.dart';
@@ -99,14 +100,19 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            //NewTransaction(_addNewTransaction),
-            TransactionList(transaction),
-          ],
+      body: Column(
+        children:<Widget>[
+
+         SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              //NewTransaction(_addNewTransaction),
+              TransactionList(transaction),
+            ],
+          ),
         ),
+    ]
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(

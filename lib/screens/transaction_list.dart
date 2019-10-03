@@ -10,13 +10,16 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 600,
+      height: 500,
       child: transaction.isEmpty ?
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               //Image.asset('assets/images/flag.png', fit: BoxFit.cover,),
-              Icon(Icons.no_sim),
+              Icon(Icons.no_sim, size: 60, color: Colors.grey,),
+              SizedBox(
+                height: 20,
+              ),
               Text("No items available"),
             ],
           )
