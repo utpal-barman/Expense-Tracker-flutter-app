@@ -14,6 +14,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
         accentColor: Colors.deepOrangeAccent,
+        fontFamily: 'Raleway',
+        /*appBarTheme: AppBarTheme(
+          textTheme: ThemeData.light().textTheme.copyWith(title: TextStyle(
+            fontFamily: 'RobotoCondensed',
+          )),
+        )*/
       ),
       home: MyHomePage(),
     );
@@ -27,36 +33,36 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> transaction = [
-    Transaction(
-      title: 'Cash',
-      date: DateTime.now(),
-      amount: 200,
-      id: 'cash9',
-    ),
-    Transaction(
-      title: 'Grocery',
-      date: DateTime.now(),
-      amount: 140,
-      id: 'cash10',
-    ),
-    Transaction(
-      title: 'Grocery',
-      date: DateTime.now(),
-      amount: 160,
-      id: 'cash11',
-    ),
-    Transaction(
-      title: 'Transport',
-      date: DateTime.now(),
-      amount: 100,
-      id: 'cash12',
-    ),
-    Transaction(
-      title: 'Medical',
-      date: DateTime.now(),
-      amount: 140.00,
-      id: 'cash8',
-    ),
+//    Transaction(
+//      title: 'Cash',
+//      date: DateTime.now(),
+//      amount: 200,
+//      id: 'cash9',
+//    ),
+//    Transaction(
+//      title: 'Grocery',
+//      date: DateTime.now(),
+//      amount: 140,
+//      id: 'cash10',
+//    ),
+//    Transaction(
+//      title: 'Grocery',
+//      date: DateTime.now(),
+//      amount: 160,
+//      id: 'cash11',
+//    ),
+//    Transaction(
+//      title: 'Transport',
+//      date: DateTime.now(),
+//      amount: 100,
+//      id: 'cash12',
+//    ),
+//    Transaction(
+//      title: 'Medical',
+//      date: DateTime.now(),
+//      amount: 140.00,
+//      id: 'cash8',
+//    ),
   ];
 
   void _addNewTransaction(String trxTitle, double trxAmount) {
