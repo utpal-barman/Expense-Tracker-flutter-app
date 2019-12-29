@@ -1,6 +1,6 @@
 # Expense Tracker
 
-A new Flutter application for tracking expenses
+A mobile application for tracking expenses. This app can run both on IOS and Android. Made with :heart: and flutter.
 
 ## Getting Started
 
